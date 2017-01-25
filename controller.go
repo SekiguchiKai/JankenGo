@@ -29,7 +29,7 @@ func (p *Player) setPlayerHand(intHand int) {
 // controller1
 func ReadHTML(res http.ResponseWriter, req *http.Request) {
 	fmt.Println("ReadHTMLが呼ばれました")
-	file, err := os.Open("../resource/index.html")
+	file, err := os.Open("./resource/index.html")
 
 	if err != nil {
 		fmt.Println(err)
